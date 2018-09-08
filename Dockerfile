@@ -21,7 +21,7 @@ RUN \
   echo "**** install sickbeard_mp4_automator ****" && \
   git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /sickbeard_mp4_automator/ && \
   touch /sickbeard_mp4_automator/info.log && \
-  chown -R abc:abc /sickbeard_mp4_automator && \
+  chmod 775 -R /sickbeard_mp4_automator && \
   ln -s /config_mp4_automator/autoProcess.ini /sickbeard_mp4_automator/autoProcess.ini && \
   rm -rf \
     /tmp/* \
